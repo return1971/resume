@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="kurs, css, html">
-    <meta name="description" content="учебный курс по курсу Владилена">
+    <meta name="description" content="учебный курс по курсу Владилена" class="avatar">
+    <link rel="stylesheet" href="styles.css">
     <title>учебный курс по курсу Владилена</title>
 </head>
 <body>
-<img src="https://sun9-33.userapi.com/c4931/u2607388/a_b8984fd5.jpg" alt="Нагорнов Евгений" width="200">
+    <div class="container">
 
+    <div class="info">
+    <img src="https://sun9-33.userapi.com/c4931/u2607388/a_b8984fd5.jpg" alt="Нагорнов Евгений" class="avatar">
+
+    <div class="info-text">
     <h1>Евгений Нагорнов</h1>
     <p>Я один из тысячи учеников пришедший <strong><em>на халявное</em> обучение</strong> к <strong>Владилениу</strong></p>
     <p>У меня есть <strong>огромное желание</strong> научиться такой премудрости как програмирование! <em>Не смотря на мои 50лет!</em></p>
@@ -20,30 +25,33 @@
     |
     <a href="https://vk.com/evgeniinagornov" target="_blank">вконтакте </a>
 
-    <hr>
+</div>
+</div>
 
+<div class="card bg-green">
     <h2>Мои увлечения</h2>
 
-    <ol>
+    <div class="увлечения">
+    <ol class="list">
         <li>обучение</li>
         <li>автопутешествие</li>
         <li>безделье</li>
     </ol>
-    
+</div>
+    </div>
     <hr>
 
-
-
+    <div class="card bg-red">
     <h2>Опыт работы</h2>
 
-    <table>
-        <thead>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>название</th>
                 <th>должность</th>
                 <th>год</th>
             </tr>
-        </thead>
+        </thead> -->
 
         <tbody>
             <tr>
@@ -66,39 +74,41 @@
             </tr>
         </tbody>
     </table>
+</div>
 
-    <h2>Связяться со мной</h2>
+    
 
-    <form action="">
-        <div>
+    <form action="/" class="form">
+        <h2>Связяться со мной</h2>
+
+        <div class="form-row">
+
+        <div class="form-group">
+
             <label for="name">ваше имя</label>
             <input type="text" id="name" placeholder="введите имя">
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">ваш email</label>
             <input type="email" id="email" placeholder="введите emale">
         </div>
+    </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">ваше сообщение</label>
             <br>
             <textarea name="" cols="20" rows="5" placeholder="введите сообщение..."></textarea>
         </div>
 
-        <input type="submit" value="отправить">
+        <input class="btn" type="submit" value="отправить">
     </form>
     <br>
     <br>
     <br>
     <br>
     <br>
-    
+</div>
 
-
-
-
-
-    
 </body>
 </html>
